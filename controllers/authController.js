@@ -13,7 +13,7 @@ exports.login = async (req, res) => {
     return res.status(400).json({ message: 'Correo o contraseña incorrectos' });
   }
 
-  // Verificar contraseña
+  // Verificar contraseñas
   const match = await bcrypt.compare(password, usuario.password);
   if (!match) {
     return res.status(400).json({ message: 'Correo o contraseña incorrectos' });
