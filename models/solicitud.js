@@ -1,4 +1,4 @@
-// models/solicitud.js
+// models/solicitud.jss
 const mongoose = require('mongoose');
 
 const solicitudSchema = new mongoose.Schema({

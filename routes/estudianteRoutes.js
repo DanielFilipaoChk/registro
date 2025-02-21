@@ -8,7 +8,7 @@ router.post('/estudiantes', estudianteController.createEstudiante);
 // Obtener todos los estudiantes
 router.get('/estudiantes', estudianteController.getAllEstudiantes);
 
-// Obtener un estudiante por ID
+// Obtener un estudiante por IDs
 router.get('/estudiantes/:id', estudianteController.getEstudianteById);
 
 // Actualizar la información de un estudiante

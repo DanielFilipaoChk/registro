@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const universidadController = require('../controllers/universidadController');
 
-// Ruta para crear una nueva universidad
+// Ruta para crear una nueva universidads
 router.post('/universidades', universidadController.createUniversidad);
 
 // Ruta para obtener todas las universidades

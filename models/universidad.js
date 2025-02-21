@@ -15,7 +15,7 @@ const universidadSchema = new mongoose.Schema({
   },
   datosAdministrativos: {  // Este campo ahora es opcional
     type: Object,  // Puedes definir el tipo adecuado según tus necesidades (por ejemplo, Object, String, etc.)
-    required: false,  // Ya no es obligatorio
+    required: false,  // Ya no es obligatorios
   },
 });
 

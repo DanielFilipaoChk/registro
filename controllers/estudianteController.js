@@ -21,7 +21,7 @@ const getAllEstudiantes = async (req, res) => {
   }
 };
 
-// Obtener un estudiante por ID
+// Obtener un estudiante por IDs
 const getEstudianteById = async (req, res) => {
   try {
     const estudiante = await Estudiante.findById(req.params.id).populate('universidadId');

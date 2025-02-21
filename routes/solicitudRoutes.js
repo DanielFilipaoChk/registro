@@ -11,7 +11,7 @@ router.post('/solicitudes', solicitudController.createSolicitud);
 // Ruta para obtener todas las solicitudes
 router.get('/solicitudes', solicitudController.getAllSolicitudes);
 
-// Ruta para actualizar el estado de la solicitud
+// Ruta para actualizar el estado de la solicituds
 router.put('/solicitudes/:id', solicitudController.updateSolicitudEstado);
 router.put('/solicitudes/:id', authMiddleware, solicitudController.updateSolicitudEstado);
 

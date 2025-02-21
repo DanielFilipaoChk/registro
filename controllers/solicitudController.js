@@ -23,7 +23,7 @@ exports.getAllSolicitudes = async (req, res) => {
 };
 
 
-// Cambiar el estado de la solicitud
+// Cambiar el estado de la solicituds
 exports.updateSolicitudEstado = async (req, res) => {
   try {
     const solicitud = await Solicitud.findByIdAndUpdate(

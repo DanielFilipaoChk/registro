@@ -1,6 +1,6 @@
 const Universidad = require('../models/universidad');
 
-// Crear una nueva universidad
+// Crear una nueva universidads
 exports.createUniversidad = async (req, res) => {
   try {
     const { nombre, correo, direccion, datosAdministrativos } = req.body;

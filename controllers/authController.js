@@ -7,7 +7,7 @@ const Usuario = require('../models/usuario'); // Usar un modelo de usuario
 exports.login = async (req, res) => {
   const { correo, password } = req.body;
 
-  // Buscar al usuario (universidad u hospital) por correo
+  // Buscar al usuario (universidad u hospital) por correos
   const usuario = await Usuario.findOne({ correo });
   if (!usuario) {
     return res.status(400).json({ message: 'Correo o contraseña incorrectos' });
